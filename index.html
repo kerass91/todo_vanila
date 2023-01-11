@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoList</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="todo-header">
+      <h1>My Tasks</h1>
+    </header>
+    <form>
+      <input type="text" class="todo-input"  placeholder="Title" />
+      <input type="text" class="todo-input-desc"  placeholder="Description" required/>
+      <button class="todo-button" type="submit">
+        Add
+        <!-- <i class="fas fa-plus-square"></i> -->
+      </button>
+<!--       <div class="select">
+        <select name="todos" class="filter-todo">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Uncompleted</option>
+        </select>
+      </div> -->
+    </form>
+    <div class="todo-container">
+      <ul class="todo-list"></ul>
+    </div>
+    <footer class="todo-footer">
+        <button class="footer-but" id="info-but""><img src="/src/icons/alert-icon.png"/></button>
+        <button class="footer-but"><img src="/src/icons/share-icon.png"/></button>
+        <button class="footer-but"><img src="/src/icons/format-icon.png"/></button>
+        <button class="footer-but"><img src="/src/icons/sort-icon.png"/></button>
+        <button class="footer-but"><img src="/src/icons/trash-2.png"/></button>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
